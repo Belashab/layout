@@ -36,3 +36,27 @@
 }
 
 .btn1 {background-color: #B57AD2 ;color: white;}
+
+.list_block{
+
+    white-space: nowrap;
+
+}
+
+.list_image {
+    display: inline;
+}
+
+.list_text {
+    display: inline;
+
+    white-space: nowrap;
+
+
+}
+
+.list_block {
+    display: table;
+
+    padding: 5px;
+}
