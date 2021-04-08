@@ -1,0 +1,38 @@
+.purple{
+    background-color: #B57AD2;
+    color: white;
+    min-height: 200px;
+}
+.blue{
+    background-color: #3490CF;
+    color: white;
+    min-height: 200px;
+}
+.process{
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.process p{text-align: left;}
+.process img{    padding-top: 30px;}
+
+.services{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services h2, span{
+    text-align: center;
+}
+
+.zalivka{
+    min-height: 200px;
+    background: linear-gradient(to top, #fefcea, #B57AD2);}
+.zalivka2{
+    background: linear-gradient(to top, #B57AD2,#F9F4FC);
+    margin-top: 30px;
+}
+
+.btn1 {background-color: #B57AD2 ;color: white;}
