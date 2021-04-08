@@ -39,24 +39,10 @@
 
 .list_block{
 
-    white-space: nowrap;
-
-}
-
-.list_image {
-    display: inline;
-}
-
-.list_text {
-    display: inline;
+    list-style-image: url(images/Services_list_dot.jpg);
 
     white-space: nowrap;
 
+    margin-bottom: 5px;
 
-}
-
-.list_block {
-    display: table;
-
-    padding: 5px;
 }
