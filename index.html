@@ -5,36 +5,50 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2" style="background-color:lavender;"><img src="images/LOGO.png"></div>
-            <div class="col-sm-8" style="background-color:lavenderblush;">
-                <div class="menu">About</div>
-                <div class="menu">Services</div>
-                <div class="menu">Success Stories</div>
-                <div class="menu">Join Us</div>
+            <div class="col-sm-2">
+                <div class="navbar-header">
+                    <a class="navbar-brand" class="logo" href="#">
+                        <p class="logo">LOGO</p>
+                    </a>
+                </div>
             </div>
-            <div class="col-sm-2" style="background-color:lavender;">
-                <button type="button" class="btn btn-outline-primary">Текст кнопки</button>
+            <div class="col-sm-8">
+                <ul class="nav navbar-nav" style="float:right">
+                    <li><a class="anchor" href="#">About</a></li>
+                    <li><a class="anchor" href="#">Sevices</a></li>
+                    <li><a class="anchor" href="#">Success stories</a></li>
+                    <li><a class="anchor" href="#">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-default">Schedule A Call</button>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5" style="background-color:lavender;">
-                <!-- Slogan i knopka -->
-                <a href="#" class="btn btn-white btn-animate">Get started</a>
+            <div class="col-sm-5">
+                <h1>Need a flexible recruiting solution
+                    as you sell and scale projects?</h1>
+                <h2>We are here to solve this exact challenge</h2>
+                <button type="button" class="btn btn-default btn1">Get started</button>
             </div>
-            <div class="col-sm-7" style="background-color:lavenderblush;"><img src="images/Image.png"></div>
+            <div class="col-sm-7">
+                <img class="header_image" src="images/Image.png" class="img-responsive">
 
+            </div>
         </div>
-    </div>
+
+</body>
+
+</html>
 
 </body>
 
