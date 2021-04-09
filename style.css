@@ -37,6 +37,7 @@
 
 .btn1 {background-color: #B57AD2 ;color: white;}
 
+
 .list_block{
 
     background-image: url(images/Services_list_dot.jpg);
@@ -55,3 +56,31 @@
 
 }
 
+
+.footer{
+    background-color: #B57AD2;
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.footer1{    min-height: 200px;}
+.footer2{
+    text-align: center;
+}
+
+.expert{
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.expert p{text-align: left;}
+
+.stories{
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
