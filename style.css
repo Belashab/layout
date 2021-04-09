@@ -31,7 +31,7 @@
 }
 
 .header_image {
-    float: right;
+    margin-left: 236px;
 }
 
 
@@ -68,6 +68,15 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: HelveticaNeue;
+    margin-top: 30px;
+}
+
+.process_block {
+    margin-top: 20px;
+    padding: 5px;
+    height: 300px;
+    font-size: 15px;
 }
 .process p{text-align: left;}
 .process img{    padding-top: 30px;}
@@ -78,17 +87,37 @@
     margin-right: auto;
 }
 
-.services h2, span, h3{
+.services h2, span{
     text-align: center;
+}
+
+.secret_block {
+    height: 60px;
+    padding: 10px;
+}
+
+.secret_button {
+    margin-top: 35px;
 }
 
 .zalivka{
     min-height: 200px;
-    background: linear-gradient(to top, #fefcea, #B57AD2);}
+    background: linear-gradient(to top, #fefcea, #B57AD2);
+}
 .zalivka2{
-    background: linear-gradient(to top, #B57AD2,#F9F4FC);
+    width: 100%;
+    background: linear-gradient( rgba(255, 244, 229, 0.0001) 0%, rgba(181, 122, 210, 0.776388) 136.98%),
+    linear-gradient(179.61deg, #F9F4FC 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+    
+    /* background: linear-gradient(to top, #B57AD2,#F9F4FC); */
     margin-top: 30px;
 }
+
+.founder_message{
+    font-family: HelveticaNeue-Medium;
+    display: column;
+}
+
 
 .btn1 {background-color: #B57AD2 ;color: white;}
 
