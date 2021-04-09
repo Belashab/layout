@@ -23,7 +23,7 @@
     margin-right: auto;
 }
 
-.services h2, span{
+.services h2, span, h3{
     text-align: center;
 }
 
@@ -36,3 +36,13 @@
 }
 
 .btn1 {background-color: #B57AD2 ;color: white;}
+
+.list_block{
+
+    list-style-image: url(images/Services_list_dot.jpg);
+
+    white-space: nowrap;
+
+    margin-bottom: 5px;
+
+}
