@@ -69,6 +69,14 @@
     margin-right: auto;
     text-align: center;
 }
+
+.logos {
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .process p{text-align: left;}
 .process img{    padding-top: 30px;}
 
