@@ -71,24 +71,30 @@
 }
 
 .logos {
-    max-width: 1093px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.logo {
+
+    margin: 4px;
+
 }
 
 .process p{text-align: left;}
 .process img{    padding-top: 30px;}
 
 .services{
-    max-width: 1093px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
+    max-width: 1320px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
 .customers {
-    max-width: 1093px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -163,5 +169,9 @@
     margin-right:5px;
     
 
+}
+
+.team2 {
+    
 }
 
