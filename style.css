@@ -39,10 +39,19 @@
 
 .list_block{
 
-    list-style-image: url(images/Services_list_dot.jpg);
+    background-image: url(images/Services_list_dot.jpg);
+
+    background-position: 0 0;
+
+    background-size: 16px;
+
+    background-size: 12px;
+
+    background-repeat: no-repeat;
 
     white-space: nowrap;
 
     margin-bottom: 5px;
 
 }
+
