@@ -24,6 +24,9 @@
    position: relative;
 }
 
+
+
+
 .header_text{
   margin-left: 180px;
   margin-top: 200px;
@@ -166,4 +169,7 @@
 
 }
 
-
+team2 {
+    margin-left: auto;
+    margin-right: auto;
+}
