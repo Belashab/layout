@@ -87,6 +87,13 @@
     margin-bottom: 15px;
 }
 
+.customers {
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
 .services h2, span, h3{
     text-align: center;
 }
