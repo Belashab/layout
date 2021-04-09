@@ -1,3 +1,39 @@
+.logo_image{
+    margin-top:28px;
+    margin-left: 180px;
+}
+
+
+.shadow{
+    height:78px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.anchor { 
+    margin-top:15px;
+    color: black;
+}
+
+.left_header{
+    margin-top: 80px;
+}
+
+.header_button{
+   margin-left: 180px;
+   margin-top:100px;
+   position: relative;
+}
+
+.header_text{
+  margin-left: 180px;
+  margin-top: 200px;
+
+}
+
+.header_image {
+    float: right;
+}
+
 .purple{
     background-color: #B57AD2;
     color: white;
@@ -35,4 +71,20 @@
     margin-top: 30px;
 }
 
-.btn1 {background-color: #B57AD2 ;color: white;}
+.btn-call {
+    color:#B57AD2;
+    width: 160px;
+    height: 46px;
+    margin-top:16px;
+    border-radius: 35px;
+    border-color:#B57AD2;
+}
+
+.btn1 {
+    font-family: HelveticaNeue-Bold;
+    font-size: 20px;
+    width: 202px;
+    height: 64px;
+    background-color: #B57AD2 ;color: white;
+    border-radius: 35px;
+}
