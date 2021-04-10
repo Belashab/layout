@@ -220,7 +220,8 @@
 
 .graph {
 
-    background-image: url(images/stories.png);
+    /* background-image: url(images/stories.png); */
+    z-index: 0;
     position:absolute;
     display: flex;
     max-height: 711px;
@@ -237,14 +238,14 @@
 
 .thunpercent {
     
-    position: relative;
+    /* position: relative; */
     -webkit-box-flex: inherit;
     z-index: 3;
     justify-content: center;
     align-items: center;
     align-content: center;
-    top: 50%;
-    left:50%;
+    bottom: 10%;
+    left:-50%;
 
     /* position: relative;
     z-index: 3;
@@ -252,5 +253,37 @@
     left: auto;
     bottom: 50%;
     top: auto; */
+
+}
+
+.long {
+    position: absolute;   
+    top: 15%;   
+    left: 66%;
+    width: 100px; 
+    height: 100px; 
+    margin: -50px;
+    border-radius: 50px;
+}
+
+.med {
+    position: absolute;   
+    top: 40%;   
+    left: 45%;
+    width: 100px; 
+    height: 100px; 
+    margin: -50px;
+    border-radius: 50px;
+}
+
+.short {
+    position: absolute;   
+    top: 68%;   
+    left: 23%;
+    width: 100px; 
+    height: 100px; 
+    margin: -50px;
+    border-radius: 50px;
+
 
 }
