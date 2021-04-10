@@ -34,7 +34,7 @@
 }
 
 .header_image {
-    float: right;
+    margin-left: 236px;
 }
 
 
@@ -71,13 +71,17 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-family: HelveticaNeue;
+    margin-top: 30px;
 }
+
 
 .logos {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+
 
 
 .process p{text-align: left;}
@@ -97,17 +101,27 @@
     margin-bottom: 15px;
 }
 
-.services h2, span, h3{
+.services h2, span{
     text-align: center;
 }
 
+
+
 .zalivka{
     min-height: 200px;
-    background: linear-gradient(to top, #fefcea, #B57AD2);}
+    background: linear-gradient(to top, #fefcea, #B57AD2);
+}
 .zalivka2{
-    background: linear-gradient(to top, #B57AD2,#F9F4FC);
+    width: 100%;
+    background: linear-gradient( rgba(255, 244, 229, 0.0001) 0%, rgba(181, 122, 210, 0.776388) 136.98%),
+    linear-gradient(179.61deg, #F9F4FC 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
+    
+    /* background: linear-gradient(to top, #B57AD2,#F9F4FC); */
     margin-top: 30px;
 }
+
+
+
 
 .btn1 {background-color: #B57AD2 ;color: white;}
 
@@ -140,6 +154,7 @@
 }
 
 .expert{
+    padding: 10px;
     max-width: 1093px;
     margin-left: auto;
     margin-right: auto;
@@ -150,6 +165,7 @@
 .expert p{text-align: left;}
 
 .stories{
+
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
@@ -302,5 +318,63 @@
     font-weight: normal;
     max-width: 500px;
     white-space: normal;
+
+
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.process_block {
+    padding: 5px;
+    height: 300px;
+    font-size: 15px;
+}
+
+.secret_block {
+    height: 60px;
+    padding: 10px;
+}
+
+.secret_button {
+    margin-top: 35px;
+}
+
+.founder_message{
+    font-family: HelveticaNeue-Medium;
+    display: column;
+}
+
+.team_text{
+    margin-top: 50px;
+    font-family:HelveticaNeue-Bold;
+    position: relative;
+}  
+
+.team_text2{
+    font-family:HelveticaNeue-Medium;
+}  
+
+.team_images{
+    margin-top: 30px;
+}
+.bd_oval {
+    position: absolute;
+    width: 100%;
+}
+
+.img_on_oval {
+    margin-left: 400px;
+    position: relative;
+}
+
+.center_in_oval {
+    margin-top: 100px;
+    margin-left: 800px;
+    position: absolute;
+}
+
+.expert_text {
+    display: column;
 
 }
