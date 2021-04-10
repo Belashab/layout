@@ -24,9 +24,6 @@
    position: relative;
 }
 
-
-
-
 .header_text{
   margin-left: 180px;
   margin-top: 200px;
@@ -76,29 +73,13 @@
 }
 
 
-.logos {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-
 .process p{text-align: left;}
 .process img{    padding-top: 30px;}
 
 .services{
-    margin:auto;
-    max-width: 1320px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.customers {
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
 }
 
 .services h2, span{
@@ -128,17 +109,21 @@
 
 .list_block{
 
-    list-style:none;
-    margin:0;
-    padding: 0;
-    padding-bottom: 10;
+    background-image: url(images/Services_list_dot.jpg);
+
+    background-position: left;
+
+    background-size: 16px;
+
+    background-size: 12px;
+
+    background-repeat: no-repeat;
+
     white-space: nowrap;
-    margin-bottom: 15px;
-    
+
+    margin-bottom: 5px;
 
 }
-
-
 
 
 .footer{
@@ -159,12 +144,12 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
 }
 
 .expert p{text-align: left;}
 
 .stories{
+
 
     max-width: 1320px;
     margin-left: auto;
@@ -321,6 +306,7 @@
 
 
 
+
     max-width: 100%;
     text-align: left;
 
@@ -377,5 +363,4 @@
 
 .expert_text {
     display: column;
-
 }
