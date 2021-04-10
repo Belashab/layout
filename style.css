@@ -72,11 +72,7 @@
     margin-top: 30px;
 }
 
-.process_block {
-    padding: 5px;
-    height: 300px;
-    font-size: 15px;
-}
+
 .process p{text-align: left;}
 .process img{    padding-top: 30px;}
 
@@ -90,14 +86,7 @@
     text-align: center;
 }
 
-.secret_block {
-    height: 60px;
-    padding: 10px;
-}
 
-.secret_button {
-    margin-top: 35px;
-}
 
 .zalivka{
     min-height: 200px;
@@ -112,10 +101,7 @@
     margin-top: 30px;
 }
 
-.founder_message{
-    font-family: HelveticaNeue-Medium;
-    display: column;
-}
+
 
 
 .btn1 {background-color: #B57AD2 ;color: white;}
@@ -162,16 +148,54 @@
 .expert p{text-align: left;}
 
 .stories{
-    max-width: 1093px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+
     text-align: center;
+
 }
 
+.process_block {
+    padding: 5px;
+    height: 300px;
+    font-size: 15px;
+}
+
+.secret_block {
+    height: 60px;
+    padding: 10px;
+}
+
+.secret_button {
+    margin-top: 35px;
+}
+
+.founder_message{
+    font-family: HelveticaNeue-Medium;
+    display: column;
+}
+
+.team_text{
+    font-family:HelveticaNeue-Bold;
+}  
+
+.team_text2{
+    font-family:HelveticaNeue-Medium;
+}  
+
+.team_images{
+    margin-top: 30px;
+}
 .bd_oval {
     position: absolute;
+    width: 100%;
 }
 
 .img_on_oval {
+    margin-left: 70px;
+    position: relative;
+}
+
+.center_in_oval {
+    margin-left: 200px;
     position: relative;
 }
