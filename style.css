@@ -143,15 +143,17 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
 }
 
 .expert p{text-align: left;}
 
 .stories{
-    max-width: 1093px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
 }
 
 .list_bullet::before {
@@ -172,4 +174,39 @@
 
     margin-top: 1em;
 
+}
+
+.arrows {
+
+    position:absolute;
+    max-width: 650;
+    max-height: 711;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.hunpercent {
+    
+    position: relative;
+    /* top: -711; */
+    z-index: 2;
+    right: -17%;
+    top: -20%;
+
+
+
+}
+
+
+.success {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin:auto;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 730px;
 }
