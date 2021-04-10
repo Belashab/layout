@@ -187,13 +187,13 @@
 
 }
 
-.hunpercent {
+.tallarr {
     
-    position: relative;
+    position: absolute;
     /* top: -711; */
     z-index: 2;
-    right: -17%;
-    top: -20%;
+    right: 30%;
+    bottom: -25%;
 
 
 
@@ -209,4 +209,25 @@
     width: 100%;
     margin-bottom: 15px;
     height: 730px;
+}
+
+.graph {
+
+    position: relative;
+    max-height: 711px;
+    max-width: 650px;
+    margin: auto;
+
+}
+
+.thunpercent {
+    
+    position: absolute;
+    /* top: -711; */
+    z-index: 3;
+    right: 80%;
+    top: calc(100% - 351);
+
+
+
 }
