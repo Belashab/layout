@@ -120,6 +120,7 @@
     padding-bottom: 10;
     white-space: nowrap;
     margin-bottom: 15px;
+    
 
 }
 
@@ -172,8 +173,11 @@
 
 .ots {
 
-    margin-top: 1em;
-
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .arrows {
@@ -261,20 +265,20 @@
 .long {
     position: absolute;   
     top: calc(8% + 50px);   
-    left: calc(55% + 50px);
-    width: 100px; 
+    left: calc(54% + 50px);
+    width: 170px; 
     height: 100px; 
-    margin: -50px;
+    margin: -70px;
     border-radius: 50px;
 }
 
 .med {
     position: absolute;   
     top: calc(35% + 50px);   
-    left: calc(36% + 50px);
-    width: 100px; 
+    left: calc(33% + 50px);
+    width: 170px; 
     height: 100px; 
-    margin: -50px;
+    margin: -70px;
     border-radius: 50px;
 }
 
@@ -282,10 +286,21 @@
     position: absolute;   
     top: calc(60% + 50px);   
     left: calc(11% + 50px);
-    width: 100px; 
+    width: 170px; 
     height: 100px; 
-    margin: -50px;
+    margin: -70px;
     border-radius: 50px;
 
+
+}
+
+.listtext {
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 500px;
+    white-space: normal;
 
 }
