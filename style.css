@@ -190,12 +190,19 @@
 .tallarr {
     
     position: absolute;
-    /* top: -711; */
     z-index: 2;
     right: 30%;
-    bottom: -25%;
+    bottom: -70%;
 
 
+
+}
+
+.medarr {
+    position: absolute;
+    z-index: 3;
+    right: 50%;
+    bottom: -200%;
 
 }
 
@@ -207,27 +214,43 @@
     text-align: center;
     margin:auto;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     height: 730px;
 }
 
 .graph {
 
-    position: relative;
+    background-image: url(images/stories.png);
+    position:absolute;
+    display: flex;
     max-height: 711px;
     max-width: 650px;
     margin: auto;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: right;
+    height: 711px;
+    width: 650px;
+    
 
 }
 
 .thunpercent {
     
-    position: absolute;
-    /* top: -711; */
+    position: relative;
+    -webkit-box-flex: inherit;
     z-index: 3;
-    right: 80%;
-    top: calc(100% - 351);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 50%;
+    left:50%;
 
-
+    /* position: relative;
+    z-index: 3;
+    right: 25%;
+    left: auto;
+    bottom: 50%;
+    top: auto; */
 
 }
