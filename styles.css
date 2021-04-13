@@ -27,6 +27,11 @@
     max-width: 1320px;
 }
 
+.headlight {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 /* Далее пишем стили, применяемые к тегу main, header и footer */
 
 
@@ -62,6 +67,11 @@
 
 
 /* внутренние стили для блока services */
+
+.services_team {
+    padding: 20px;
+
+}
 
 .services_button {
     background-color: #B57AD2;
