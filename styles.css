@@ -238,7 +238,7 @@
     font-weight: bold; 
     display: inline-block; 
     width: 12px; 
-    margin-left: -1em;
+    margin-left: -20px;
     /* font-size в данном случае отвечает за размер "точки" в списке */
     font-size: 32px; 
     vertical-align: middle;
