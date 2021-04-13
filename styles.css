@@ -18,6 +18,13 @@
 
 }
 
+.main_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1320px;
+}
+
 /* Далее пишем стили, применяемые к тегу main, header и footer */
 
 
