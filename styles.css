@@ -126,10 +126,10 @@
     color: #B57AD2; 
     font-weight: bold; 
     display: inline-block; 
-    width: 2em; 
+    width: 12px; 
     margin-left: -1em;
     /* font-size в данном случае отвечает за размер "точки" в списке */
-    font-size: 1.2em; 
+    font-size: 32px; 
     vertical-align: middle;
 }
 
