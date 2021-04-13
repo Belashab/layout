@@ -48,3 +48,12 @@
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
+.services_button {
+    background-color: #B57AD2;
+    padding: 24px 72px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 48px;
+
+}
