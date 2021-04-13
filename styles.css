@@ -9,3 +9,15 @@
 .process{
     background-color: black;
 }
+
+.services {
+    max-width: 1320px;
+    max-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
