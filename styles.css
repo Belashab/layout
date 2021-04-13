@@ -15,11 +15,6 @@
 
 /* Далее пишем стили, применяемые к конкретным тегам section */
 
-.process{
-    background-color: black;
-}
-
-
 .services {
     max-width: 1320px;
     max-height: auto;
@@ -31,6 +26,13 @@
     align-items: stretch;
 
 }
+
+.process{
+    background-color: black;
+}
+
+
+
 
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
