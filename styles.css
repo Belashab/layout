@@ -72,6 +72,7 @@
     font-size: 12px;
     border-radius: 48px;
     border: none;
+    outline: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 
