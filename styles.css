@@ -12,6 +12,12 @@
     src: 'fonts/HelveticaNeueCyr-Roman.woff2'
 }
 
+.image_scale {
+    max-width: 100%;
+    max-height: auto;
+
+}
+
 /* Далее пишем стили, применяемые к тегу main, header и footer */
 
 
