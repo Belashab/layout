@@ -1,0 +1,124 @@
+/* Рядом с каждым стилем желательно оставлять комментарий с объяснением зачем этот стиль нужен  и что делает*/
+
+/* Если есть какие-либо предложения по организации кода, то лучше их записывать сразу в мейн и растаскивать по остальным веткам */
+
+
+/* Шрифт - HelveticaNeue
+Темно-фиолетовый - B57AD2 
+Далее пишем стили применяемые ко всей странице*/
+
+@font-face {
+    font-family: 'Arial, Helvetica, sans-serif';
+    src: 'fonts/HelveticaNeueCyr-Roman.woff2'
+}
+
+.image_scale {
+    max-width: 100%;
+    max-height: auto;
+
+}
+
+
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 1320px;
+}
+
+/* Далее пишем стили, применяемые к тегу main, header и footer */
+
+
+/* Далее пишем стили, применяемые к конкретным тегам section.
+Если наберется много одинаковых для всех секций свойств, то лучше их  вынести в отдельный стиль
+ и обновить классы html'а */
+
+.services {
+    max-width: 1320px;
+    max-height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+
+}
+
+.process{
+    background-color: black;
+}
+
+
+
+
+/* далее пишем все прочие стили при этом названия должны быть в виде 
+(название секции маленькими буквами)_(название стиля).
+Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
+
+
+
+
+/* внутренние стили для блока services */
+
+.services_button {
+    background-color: #B57AD2;
+    padding: 24px 72px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 48px;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+.services_button:hover {
+    box-shadow: 0 6px 24px 0 rgba(0,0,0,0.24), 0 20px 60px 0 rgba(0,0,0,0.19);
+}
+
+.services_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.services_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.services_button:hover span {
+    padding-right: 25px;
+}
+  
+.services_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.services_list {
+    list-style: none;
+}
+
+.services_list_bullet::before {
+    content: "\2022";  
+    color: #B57AD2; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 2em; 
+    margin-left: -1em;
+    /* font-size в данном случае отвечает за размер "точки" в списке */
+    font-size: 1.2em; 
+    vertical-align: middle;
+}
+
