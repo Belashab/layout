@@ -126,11 +126,11 @@ body {
 /* конец перечисления шрифтов */
 
 
-.image_scale {
+/* .image_scale {
     max-width: 100%;
     max-height: auto;
 
-}
+} */
 
 
 .main_container {
@@ -139,6 +139,8 @@ body {
     align-content: center;
     flex-direction: column;
     max-width: 1320px;
+    margin:auto;
+    padding: 20px;
 }
 
 .headlight {
@@ -157,16 +159,17 @@ body {
 
  
 .services {
-    min-width: 800px;
+    max-width: 1330px;
     min-height: auto;
-    overflow-x: visible;
+    -webkit-flex-direction: row wrap;
+    flex-direction: row wrap;
     padding: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     align-content: center;
+    width: 1320px;
+    justify-content: center;
 
 }
 
