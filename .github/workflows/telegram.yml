@@ -1,0 +1,16 @@
+
+name: CI
+on: issue_comment
+
+jobs:
+  issue_commented:
+    # This job only runs for issue comments
+    name: Issue comment
+    steps:
+    - uses: robotomize/notify-telegram@v0.1.0
+      if: always()
+      with:
+        chat: ${{ 483494219 }} # user id or channel name secret
+        token: ${{ 1766537054:AAEuVDu3UBgdweRDafrrDpj2vcya1Dn_fwU }} # token secret
+        status: ${{ job.status }} # do not modify this line
+        message: ${{ secrets.message }} # custom message
