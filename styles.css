@@ -157,8 +157,9 @@ body {
 
  
 .services {
-    max-width: 1320px;
-    max-height: auto;
+    min-width: 800px;
+    min-height: auto;
+    overflow-x: visible;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -187,6 +188,7 @@ body {
 
 .services_team {
     padding: 20px;
+    align-content: stretch;
 
 }
 
