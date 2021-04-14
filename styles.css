@@ -147,6 +147,14 @@ body {
 Если наберется много одинаковых для всех секций свойств, то лучше их  вынести в отдельный стиль
  и обновить классы html'а */
 
+ /* Секция achevements */
+
+ .ticker {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
 .process{
     background-color: black;
 }
