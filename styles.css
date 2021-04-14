@@ -232,6 +232,26 @@ body {
     right: 0;
 }
 
+/* .services_button:after {
+    content: "";
+    background: #B57AD2;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  .services_button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }  неудачная попытка заанимировать нажатие на кнопку*/
+  
+
 .services_list {
     list-style: none;
 }
