@@ -175,7 +175,7 @@ body {
     flex-shrink: inherit;
 
 }
-
+/* START SERGEY CSS = PROGRESS BLOCK*/
 .process{
     max-width: 1093px;
     display: flex;
@@ -207,10 +207,14 @@ h2 {
         margin-block-start: 0.2em;
         margin-block-end: 0.2em;
     }
-h3 {margin-block-start: 0em;}
+.sub_block h3 {
+    margin-block-start: 0em;
+    color: white;
+    padding-top: 20px;
+    font-size: smaller;}
 .div_img{
     position: relative;
-    height: 250px;
+    height: 270px;
 }
 .process img{
     max-height: 100%;
@@ -224,7 +228,13 @@ h3 {margin-block-start: 0em;}
     right: 0;
     margin: auto;
 }
-
+.process p{
+    color: white;
+    font-size: smaller;
+}
+.sub_block{
+    min-height: 300px;
+}
 .zalivka {
     min-height: 300px;
     background: linear-gradient(to top, #fefcea, #B57AD2);
@@ -235,6 +245,10 @@ h3 {margin-block-start: 0em;}
       flex: 100%;
     }
   }
+
+/* START SERGEY CSS = SECRET BLOCK*/
+
+
 
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
