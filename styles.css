@@ -191,7 +191,7 @@ body {
 .services_button {
     background-color: #B57AD2;
     padding: 24px 72px;
-    cursor: pointer;
+    cursor: inherit;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
@@ -208,7 +208,7 @@ body {
 }
 
 .services_button span {
-    cursor: pointer;
+    cursor: inherit;
     display: inline-block;
     position: relative;
     transition: 0.5s;
