@@ -126,11 +126,11 @@ body {
 /* конец перечисления шрифтов */
 
 
-/* .image_scale {
+.image_scale {
     max-width: 100%;
     max-height: auto;
 
-} */
+}
 
 
 .main_container {
@@ -141,6 +141,7 @@ body {
     max-width: 1320px;
     margin:auto;
     padding: 20px;
+    flex-shrink: 3;
 }
 
 .headlight {
@@ -159,17 +160,19 @@ body {
 
  
 .services {
-    max-width: 1330px;
-    min-height: auto;
+    max-width: 1320px;
+    min-width: 800px;
     -webkit-flex-direction: row wrap;
     flex-direction: row wrap;
+    flex-wrap: wrap;
+    flex-flow: row;
     padding: 10px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: stretch;
     align-content: center;
-    width: 1320px;
     justify-content: center;
+    flex-shrink: inherit;
 
 }
 
@@ -192,7 +195,7 @@ body {
 .services_team {
     padding: 20px;
     align-content: stretch;
-
+    white-space: initial;
 }
 
 .services_button {
@@ -268,7 +271,7 @@ body {
     color: #B57AD2; 
     font-weight: bold; 
     display: inline-block; 
-    width: 12px; 
+    width: 24px; 
     margin-left: -20px;
     /* font-size в данном случае отвечает за размер "точки" в списке */
     font-size: 32px; 
