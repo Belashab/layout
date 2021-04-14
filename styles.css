@@ -176,7 +176,7 @@ body {
 
 }
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process{
+.process, .secretsauce{
     max-width: 1093px;
     display: flex;
     flex-wrap: wrap;
@@ -216,7 +216,7 @@ h2 {
     position: relative;
     height: 270px;
 }
-.process img{
+.process  img, .secretsauce img{
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -241,12 +241,18 @@ h2 {
 }
 
 @media (max-width: 400px) {
-    .process_block {
+    .process_block, .secretsauce, .services {
       flex: 100%;
     }
   }
 
 /* START SERGEY CSS = SECRET BLOCK*/
+/* В основном стили унаследованы из блка CSS для progress*/
+
+.secretsauce .sub_block h3{color: black;}
+.secretsauce p {
+    font-size: smaller;
+}
 
 
 
