@@ -188,38 +188,30 @@ body {
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
 
-/* Стили для класса ticker */
+/* Стили для блока achievements */
 
-
-  
-
-.ticker {
-  display: flex;
-  overflow: hidden;
+.achievements {
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
 }
 
-.ticker__list {
-  display: flex;
-  margin-top: 20px;
-  animation: ticker 15s infinite linear;
+.customers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1591px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
 }
+  
 
-  .ticker:hover {
-      animation-play-state: paused;
-    }
-  
-.ticker__item {
-  margin-right: 20px;
-}
-@keyframes ticker {
-    from {
-      transform: translateX(100%);
-    }
-  
-    to {
-      transform: translateX(-100%);
-    }
-  }
 
 
 
