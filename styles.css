@@ -175,11 +175,84 @@ body {
     flex-shrink: inherit;
 
 }
-
-.process{
-    background-color: black;
+/* START SERGEY CSS = PROGRESS BLOCK*/
+.process, .secretsauce{
+    max-width: 1093px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.break {
+    flex-basis: 100%;
+  }
+
+.process_block{
+    flex: 33.3333%;
+}
+
+.purple{
+    background-color: #B57AD2;
+}
+
+.blue {
+    background-color: #3490CF;
+}
+
+h2 {
+        margin-block-start: 0.2em;
+        margin-block-end: 0.2em;
+    }
+.sub_block h3 {
+    margin-block-start: 0em;
+    color: white;
+    padding-top: 20px;
+    font-size: smaller;}
+.div_img{
+    position: relative;
+    height: 270px;
+}
+.process  img, .secretsauce img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.process p{
+    color: white;
+    font-size: smaller;
+}
+.sub_block{
+    min-height: 300px;
+}
+.zalivka {
+    min-height: 300px;
+    background: linear-gradient(to top, #fefcea, #B57AD2);
+}
+
+@media (max-width: 400px) {
+    .process_block, .secretsauce, .services {
+      flex: 100%;
+    }
+  }
+
+/* START SERGEY CSS = SECRET BLOCK*/
+/* В основном стили унаследованы из блка CSS для progress*/
+
+.secretsauce .sub_block h3{color: black;}
+.secretsauce p {
+    font-size: smaller;
+}
 
 
 
