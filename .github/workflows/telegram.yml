@@ -1,17 +1,14 @@
+name: Telegram Notification
 
-name: telegram
+on: [push, pull_request, issues, fork, watch]
 
-on:
-  push:
-    branches: [ main ]  
-  pull_request:
-    types: [assigned, opened, synchronize, reopened]     
 jobs:
-  build:   
-    runs-on: ubuntu-latest    
-    steps:        
-    - uses: avkviring/telegram-github-action@v0.0.13
-      env:
-        telegram_to: 483494219  
-        telegram_token: 1766537054:AAEuVDu3UBgdweRDafrrDpj2vcya1Dn_fwU
-        event: ${{ toJson(github.event) }}
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: telegram-notify
+        uses: cofob/telegram-actions@main
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          BOT_CHAT_ID: ${{ secrets.BOT_CHAT_ID }}
+          BOT_IGNORE: ${{ secrets.BOT_IGNORE }}
