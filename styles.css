@@ -176,7 +176,7 @@ body {
 
 }
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process, .secretsauce{
+.process, .secretsauce, .founder{
     max-width: 1093px;
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +185,7 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
 }
 
 .break {
@@ -247,14 +248,24 @@ h2 {
   }
 
 /* START SERGEY CSS = SECRET BLOCK*/
-/* В основном стили унаследованы из блка CSS для progress*/
+/* В основном стили унаследованы из блока CSS для progress*/
 
 .secretsauce .sub_block h3{color: black;}
 .secretsauce p {
     font-size: smaller;
 }
 
+/* START SERGEY CSS = FOUNDER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
 
+.founder .sub_block{
+    min-height: 300px;
+    flex:50%;    
+}
+
+.founder .sub_block img{
+    padding-top: 30px;    
+}
 
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
