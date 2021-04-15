@@ -272,6 +272,31 @@ h2 {
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
 
+/* Стили для блока achievements */
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1591px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+  
+
+
 
 
 /* внутренние стили для блока services */
@@ -361,4 +386,5 @@ h2 {
     font-size: 32px; 
     vertical-align: middle;
 }
+
 
