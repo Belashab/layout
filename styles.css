@@ -157,13 +157,7 @@ body {
 Если наберется много одинаковых для всех секций свойств, то лучше их  вынести в отдельный стиль
  и обновить классы html'а */
 
- /* Секция achevements */
 
- .ticker {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #fff;
-  }
  
 .services {
     max-width: 1320px;
@@ -193,6 +187,39 @@ body {
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
+
+/* Стили для класса ticker */
+
+
+  
+
+.ticker {
+  display: flex;
+  overflow: hidden;
+}
+
+.ticker__list {
+  display: flex;
+  margin-top: 20px;
+  animation: ticker 15s infinite linear;
+}
+
+  .ticker:hover {
+      animation-play-state: paused;
+    }
+  
+.ticker__item {
+  margin-right: 20px;
+}
+@keyframes ticker {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
 
 
 
@@ -283,4 +310,5 @@ body {
     font-size: 32px; 
     vertical-align: middle;
 }
+
 
