@@ -176,15 +176,14 @@ body {
 
 }
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process, .secretsauce, .founder{
+.process, .secretsauce, .founder, .footer{
     max-width: 1093px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 30px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     padding-bottom: 30px;
 }
 
@@ -267,6 +266,26 @@ h2 {
     padding-top: 30px;    
 }
 
+/* START SERGEY CSS = FOOTER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.footer .list_block {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+
+.fa{
+color: #B57AD2; font-size: 27px; 
+box-sizing: content-box; 
+line-height: 48px; 
+text-align: center; width: 48px; height: 48px; 
+display: inline-block; 
+overflow: hidden; 
+border-radius: 50%; 
+background-color: white;
+}
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
