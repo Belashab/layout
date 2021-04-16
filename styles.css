@@ -171,11 +171,7 @@ body {
 
 }
 /* START SERGEY CSS = PROGRESS BLOCK*/
-<<<<<<< HEAD
-.process, .secretsauce, .founder, .expert {
-=======
-.process, .secretsauce, .founder, .footer{
->>>>>>> footer
+.process, .secretsauce, .founder, .expert, .footer {
     max-width: 1093px;
     display: flex;
     flex-wrap: wrap;
@@ -240,7 +236,7 @@ h2 {
 }
 
 @media (max-width: 400px) {
-    .process_block, .secretsauce, .services {
+    .process_block, .secretsauce, .services, .expert, .footer {
       flex: 100%;
     }
   }
@@ -265,7 +261,15 @@ h2 {
     padding-top: 30px;    
 }
 
-<<<<<<< HEAD
+/* START SERGEY CSS = FOUNDER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.footer{
+    background-color: #B57AD2;
+    align-items:flex-start;
+    justify-content: stretch; 
+}
+
+
 /* START SERGEY CSS = EXPERT BLOCK*/
 /* В основном стили унаследованы из блока CSS для progress*/
 
@@ -278,9 +282,10 @@ h2 {
     flex:50%;
 }
 
-=======
+
 /* START SERGEY CSS = FOOTER BLOCK*/
 /* В основном стили унаследованы из блока CSS для progress*/
+.footer{width: 100%;}
 .footer .list_block {
     list-style: none;
     margin: 0;
@@ -288,18 +293,43 @@ h2 {
     white-space: nowrap;
     margin-bottom: 15px;
 }
+.footer{
+    text-align: left;
+    padding: 10px;
+}
 
 .fa{
-color: #B57AD2; font-size: 27px; 
-box-sizing: content-box; 
-line-height: 48px; 
-text-align: center; width: 48px; height: 48px; 
-display: inline-block; 
-overflow: hidden; 
-border-radius: 50%; 
-background-color: white;
+    color: #B57AD2;
+    font-size: 27px;
+    box-sizing: content-box;
+    line-height: 48px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: white;
 }
->>>>>>> footer
+.fa-twitter-square, .fa-youtube-square, .fa-facebook-square{
+    line-height: 48px;
+}
+
+.footer ul.list_block li a {
+    color: white;
+    padding-left: 40px;
+    font-size: large;
+    text-decoration: none;
+}
+.list_block{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+    
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
