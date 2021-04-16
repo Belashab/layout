@@ -135,13 +135,8 @@ body {
 
 .main_container {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
-    max-width: 1320px;
-    margin:auto;
-    padding: 20px;
-    flex-shrink: 3;
+    align-items: center;
 }
 
 .headlight {
@@ -176,7 +171,7 @@ body {
 
 }
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process, .secretsauce, .founder{
+.process, .secretsauce, .founder, .expert {
     max-width: 1093px;
     display: flex;
     flex-wrap: wrap;
@@ -267,9 +262,46 @@ h2 {
     padding-top: 30px;    
 }
 
+/* START SERGEY CSS = EXPERT BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+
+.expert .sub_block1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expert .sub_block1 .sub_block2{
+    flex:50%;
+}
+
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
+
+
+/* Стили для блока achievements */
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1591px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+  
 
 
 
@@ -294,7 +326,8 @@ h2 {
     outline: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-
+    font-size: 25px;
+    color: white;
 }
 
 .services_button:hover {
@@ -361,4 +394,5 @@ h2 {
     font-size: 32px; 
     vertical-align: middle;
 }
+
 
