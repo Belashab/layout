@@ -169,7 +169,59 @@ body {
     justify-content: center;
     flex-shrink: inherit;
 
+    /* Подключаю CSS шрифт */
+    @font-face {
+        font-family: 'helveticaneuecyr';
+        src: url("/fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;    
+    }
+
 }
+
+html,body{
+    font-family: "helveticaneuecyr",Helvetica;
+    font-weight: 300;
+    }
+
+.white{
+    color: white;
+}
+.small{
+    font-size: 16pt;
+}
+.title{
+    font-size: 25pt;
+}
+.title span{
+    font-size: 16pt;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.form-control{
+    width: 70%;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
+    border: none;
+    width: 80%;
+    height: 30px;
+}
+.form-control-comment{
+    width: 70%;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
+    border: none;
+    width: 80%;
+    height: 60px;
+    margin-top: 7px;
+}
+.zalivka2{
+    background: linear-gradient(to top, white,rgb(249, 244, 252));
+}
+
 /* START SERGEY CSS = PROGRESS BLOCK*/
 .process, .secretsauce, .founder, .expert, .footer {
     max-width: 1093px;
@@ -225,14 +277,14 @@ h2 {
 }
 .process p{
     color: white;
-    font-size: smaller;
+    font-size: 16pt;
 }
 .sub_block{
     min-height: 300px;
 }
 .zalivka {
     min-height: 300px;
-    background: linear-gradient(to top, #fefcea, #B57AD2);
+    background: linear-gradient(to top,rgb(181,122,210,0.6), rgb(255,244,229,0.01));
 }
 
 @media (max-width: 400px) {
@@ -246,7 +298,7 @@ h2 {
 
 .secretsauce .sub_block h3{color: black;}
 .secretsauce p {
-    font-size: smaller;
+    font-size: 16pt;
 }
 
 /* START SERGEY CSS = FOUNDER BLOCK*/
@@ -261,7 +313,12 @@ h2 {
     padding-top: 30px;    
 }
 
-/* START SERGEY CSS = FOUNDER BLOCK*/
+.message{
+    margin-right: 30px;
+    padding: 20px;
+}
+
+/* START SERGEY CSS = FOOTER BLOCK*/
 /* В основном стили унаследованы из блока CSS для progress*/
 .footer{
     background-color: #B57AD2;
@@ -280,6 +337,7 @@ h2 {
 
 .expert .sub_block1 .sub_block2{
     flex:50%;
+    padding-top: 40px;
 }
 
 
