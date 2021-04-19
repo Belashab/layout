@@ -429,6 +429,13 @@ h2 {
     flex-wrap: wrap;
     /* flex-shrink: 1; */
 }
+
+.stories {
+    display: flex;
+    max-width: 1591px;
+    align-items: center;
+    justify-content: space-between;
+}
   
 
 
