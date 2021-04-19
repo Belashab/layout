@@ -135,13 +135,8 @@ body {
 
 .main_container {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
-    max-width: 1320px;
-    margin:auto;
-    padding: 20px;
-    flex-shrink: 3;
+    align-items: center;
 }
 
 .headlight {
@@ -174,17 +169,71 @@ body {
     justify-content: center;
     flex-shrink: inherit;
 
+    /* Подключаю CSS шрифт */
+    @font-face {
+        font-family: 'helveticaneuecyr';
+        src: url("/fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;    
+    }
+
 }
+
+html,body{
+    font-family: "helveticaneuecyr",Helvetica;
+    font-weight: 300;
+    }
+
+.white{
+    color: white;
+}
+.small{
+    font-size: 16pt;
+}
+.title{
+    font-size: 25pt;
+}
+.title span{
+    font-size: 16pt;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+
+.form-control{
+    width: 70%;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
+    border: none;
+    width: 80%;
+    height: 30px;
+}
+.form-control-comment{
+    width: 70%;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 20%);
+    border: none;
+    width: 80%;
+    height: 60px;
+    margin-top: 7px;
+}
+.zalivka2{
+    background: linear-gradient(to top, white,rgb(249, 244, 252));
+}
+
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process, .secretsauce{
-    max-width: 1093px;
+.process, .secretsauce, .founder, .expert, .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 30px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.process{
+    max-width: 1093px;
 }
 
 .break {
@@ -230,35 +279,157 @@ h2 {
 }
 .process p{
     color: white;
-    font-size: smaller;
+    font-size: 16pt;
 }
 .sub_block{
     min-height: 300px;
 }
 .zalivka {
     min-height: 300px;
-    background: linear-gradient(to top, #fefcea, #B57AD2);
+    background: linear-gradient(to top,rgb(181,122,210,0.6), rgb(255,244,229,0.01));
 }
 
 @media (max-width: 400px) {
-    .process_block, .secretsauce, .services {
+    .process_block, .secretsauce, .services, .expert, .footer {
       flex: 100%;
     }
   }
 
 /* START SERGEY CSS = SECRET BLOCK*/
-/* В основном стили унаследованы из блка CSS для progress*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.secretsauce{
+    max-width: 1099px;
+}
 
 .secretsauce .sub_block h3{color: black;}
 .secretsauce p {
-    font-size: smaller;
+    font-size: 16pt;
+}
+
+/* START SERGEY CSS = FOUNDER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.founder{
+    max-width: 1600px;
+}
+
+.founder .sub_block{
+    min-height: 300px;
+    flex:50%;    
+}
+
+.founder .sub_block img{
+    padding-top: 30px;    
+}
+
+.message{
+    margin-right: 30px;
+    padding: 20px;
+}
+
+/* START SERGEY CSS = FOOTER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.footer{
+    max-width: 1600px;
+}
+.footer{
+    background-color: #B57AD2;
+    align-items:flex-start;
+    justify-content: stretch; 
 }
 
 
+/* START SERGEY CSS = EXPERT BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.expert{
+    max-width: 1600px;
+}
 
+.expert .sub_block1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expert .sub_block1 .sub_block2{
+    flex:50%;
+    padding-top: 40px;
+}
+
+
+/* START SERGEY CSS = FOOTER BLOCK*/
+/* В основном стили унаследованы из блока CSS для progress*/
+.footer{width: 100%;}
+.footer .list_block {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+.footer{
+    text-align: left;
+    padding: 10px;
+}
+
+.fa{
+    color: #B57AD2;
+    font-size: 27px;
+    box-sizing: content-box;
+    line-height: 48px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: white;
+}
+.fa-twitter-square, .fa-youtube-square, .fa-facebook-square{
+    line-height: 48px;
+}
+
+.footer ul.list_block li a {
+    color: white;
+    padding-left: 40px;
+    font-size: large;
+    text-decoration: none;
+}
+.list_block{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10;
+    white-space: nowrap;
+    margin-bottom: 15px;
+}
+    
 /* далее пишем все прочие стили при этом названия должны быть в виде 
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
+
+
+/* Стили для блока achievements */
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    max-width: 1320px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1591px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-shrink: 1; */
+}
+  
 
 
 
@@ -283,7 +454,8 @@ h2 {
     outline: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-
+    font-size: 25px;
+    color: white;
 }
 
 .services_button:hover {
@@ -350,4 +522,5 @@ h2 {
     font-size: 32px; 
     vertical-align: middle;
 }
+
 
