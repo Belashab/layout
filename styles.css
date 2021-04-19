@@ -432,9 +432,32 @@ h2 {
 
 .stories {
     display: flex;
+    flex-direction: row;
     max-width: 1591px;
     align-items: center;
     justify-content: space-between;
+}
+
+.stories_arrows {
+    position: relative;
+}
+
+.stories_long_arrow {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.stories_medium_arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.stories_short_arrow {
+    display: flex;
+    width: 100%;
+    justify-content: left;
 }
   
 
