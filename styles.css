@@ -125,7 +125,6 @@ body {
 
 /* конец перечисления шрифтов */
 
-
 .image_scale {
     max-width: 100%;
     max-height: auto;
@@ -271,6 +270,78 @@ h2 {
 (название секции маленькими буквами)_(название стиля).
 Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
+/*Стили для блока header */
+
+
+
+.shadow_header{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    height:78px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+   
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* внутренние стили для блока header */
+
+.logo_image{
+    margin-top:25px;
+    margin-left: 180px;
+}
+
+
+.menu {
+    margin-top:10px;
+    margin-left: 950px;
+    margin-right: 70px;
+}
+
+ul#menu li {
+    padding: 15px;
+    display:inline;
+}
+
+.anchor { 
+    text-decoration: none; 
+    color: black;
+}
+
+.btn-call {
+    color:#B57AD2;
+    width: 160px;
+    height: 46px;
+    margin-top:12px;
+    border-radius: 35px;
+    border-color:#B57AD2;
+    background-color: Transparent;
+}
+
+
+.left_header{
+    margin-top: 80px;
+}
+
+.header_button{
+   margin-left: 180px;
+   margin-top:100px;
+   position: relative;
+}
+
+.header_text{
+  margin-left: 180px;
+  margin-top: 200px;
+}
+
+.header_image {
+    margin-left: 236px;
+}
 
 /* Стили для блока achievements */
 
