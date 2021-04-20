@@ -433,10 +433,10 @@ h2 {
 .stories {
     display: flex;
     flex-direction: row;
-    max-width: 1320px;
+    /* max-width: 1320px; */
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     /* margin-bottom: 12%; */
     flex-wrap: wrap;
     padding: 20px;
@@ -451,7 +451,7 @@ h2 {
 
 .stories_image_section {
     position: relative;
-    display: inline-flex;
+    /* display: inline-flex; */
     padding: 20px;
     max-width: 650px;
     max-height: 711px;
@@ -469,25 +469,36 @@ h2 {
 
 .stories_long_arrow {
     position: absolute;
-    justify-self: right;
+    /* justify-self: right; */
+    text-align: center;
+    max-width: 220px;
     z-index: 2;
     margin: -70px;
-    top: 120px;
-    right: 215px;
+    top: 135px;
+    right: 199px;
 }
 
 .stories_medium_arrow {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    position: absolute;
+    max-width: 220px;
     z-index: 3;
-    margin: -70px
+    margin: -70px;
+    top: 317px;
+    right: 339px;
 }
 
 .stories_short_arrow {
-    display: flex;
-    justify-content: left;
+    /* display: flex; */
+    text-align: center;
+    position: absolute;
     z-index: 4;
-    margin: -70px
+    margin: -70px;
+    max-width: 220px;
+    top: 500px;
+    right: 490px;
 }
 
 .success_list {
