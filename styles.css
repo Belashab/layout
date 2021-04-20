@@ -363,6 +363,19 @@ h2 {
     min-height: 300px;
     background: linear-gradient(to top,rgb(181,122,210,0.6), rgb(255,244,229,0.01));
 }
+.zigzag{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.zigzag img{
+    position: unset;
+}
+
+.cover{
+    object-fit: cover;
+  }
+
 
 @media (max-width: 400px) {
     .process_block, .secretsauce, .services, .expert, .footer {
