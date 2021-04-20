@@ -435,41 +435,58 @@ h2 {
     flex-direction: row;
     max-width: 1320px;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
-
+    /* margin-bottom: 12%; */
+    flex-wrap: wrap;
+    padding: 20px;
+    /* margin: 20px; */
 }
 
 .stories_block {
     padding: 20px;
+    max-width: 650px;
+    margin:20px;
+}
+
+.stories_image_section {
+    position: relative;
+    display: inline-flex;
+    padding: 20px;
+    max-width: 650px;
+    max-height: 711px;
 }
 
 .stories_arrows {
     /* position: relative; */
-    z-index: 0;
-    padding: 20px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    /* max-width: 600px;
+    max-height: 715px; */
 }
 
 .stories_long_arrow {
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    z-index: 1;
-    margin: -70px
+    position: absolute;
+    justify-self: right;
+    z-index: 2;
+    margin: -70px;
+    top: 120px;
+    right: 215px;
 }
 
 .stories_medium_arrow {
     display: flex;
-    width: 100%;
     justify-content: center;
-    z-index: 1;
+    z-index: 3;
     margin: -70px
 }
 
 .stories_short_arrow {
     display: flex;
-    width: 100%;
     justify-content: left;
-    z-index: 1;
+    z-index: 4;
     margin: -70px
 }
 
