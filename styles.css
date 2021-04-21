@@ -10,6 +10,7 @@
 
 body {
     cursor: url(images/pointer.png), auto;
+    overflow-x: hidden;
 }
 
 /* Далее содеоажатся ВСЕ необходимые шрифты от большего размера к меньшему*/
@@ -705,4 +706,28 @@ h2 {
     vertical-align: middle;
 }
 
+/* Стили для блока ourteam */
+
+.team {
+    flex-wrap: wrap;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    padding-bottom: 400px;
+}
+
+.oval_image {
+    flex-wrap: wrap;
+    width: 100%;
+    position:relative;
+}
+
+.team_header {
+    text-align: center;
+    position: absolute;
+}
+
+.member_images {
+    position: absolute;
+}
 
