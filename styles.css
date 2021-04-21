@@ -254,19 +254,13 @@ ul#menu li {
 
  
 .services {
-    max-width: 1320px;
-    min-width: 800px;
-    -webkit-flex-direction: row wrap;
-    flex-direction: row wrap;
+
+
     flex-wrap: wrap;
-    flex-flow: row;
     padding: 10px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: stretch;
+    display: flex;
     align-content: center;
     justify-content: center;
-    flex-shrink: inherit;
 
     /* Подключаю CSS шрифт */
     @font-face {
