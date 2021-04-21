@@ -14,6 +14,30 @@ body {
 
 /* Далее содеоажатся ВСЕ необходимые шрифты от большего размера к меньшему*/
 
+@font-face {
+    font-family: landing-page;
+    src:url(fonts/HelveticaNeueCyr-Roman.woff2)
+}
+
+@font-face {
+    font-family: landing-page;
+    src:url(fonts/HelveticaNeueCyr-Bold.woff2);
+    font-weight:bold;
+}
+
+@font-face {
+    font-family: landing-page;
+    src:url(fonts/HelveticaNeueCyr-Light.woff2);
+    font-weight:lighter;
+}
+
+@font-face {
+    font-family: landing-page;
+    src:url(fonts/HelveticaNeueCyr-Medium.woff2);
+    font-weight:normal
+}
+
+/* 
 .font_bold_40 {
     font-family: 'Arial, Helvetica, sans-serif';
     src: 'fonts/HelveticaNeueCyr-Bold.woff2';
@@ -120,7 +144,7 @@ body {
     font-family: 'Arial, Helvetica, sans-serif';
     src: 'fonts/HelveticaNeueCyr-Roman.woff2';
     font-size: 16px;
-}
+} */
 
 
 /* конец перечисления шрифтов */
