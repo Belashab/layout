@@ -710,10 +710,14 @@ h2 {
 /* Стили для блока ourteam */
 
 .team {
+    /* background: linear-gradient(to bottom, #F9F4FC, #cac4ba);
+	border-radius: 50%;
+    transform: scaleX(1.5);
+    transform: scaleY(0.9);   вариант овала как фон дива*/ 
     flex-wrap: wrap;
     display: flex;
     height: 700px;
-    width: 99vw;
+    width: 118.5rem;
     max-width: 2000px;
     justify-content: center;
     padding-bottom: 400px;
@@ -726,11 +730,13 @@ h2 {
 }
 
 .team_header {
+    transform: initial;
     text-align: center;
     position: absolute;
 }
 
 .member_team {
+    transform: initial;
     width: 100%;
     height: auto;
     align-self: center;
@@ -739,27 +745,42 @@ h2 {
 }
 
 .member_image {
+    width: 100%;
+    height: 100%;
     position: absolute;
 }
 
 .member1_image {
-    
+    position: absolute;
+    top:600px;
+    left: 350px;
+    z-index: 1;
 }
 
 .member2_image {
+    position: absolute;
     
+    z-index: 2;
 }
 
 .member3_image {
+    position: absolute;
    
+    z-index: 3;
 }
 
 .member4_image {
-    
+    position: absolute;
+  ;
+    z-index: 4;
 }
 
 .member5_image {
-
+    position: absolute;
+    position: absolute;
+    top: 180px;
+    left: 350px;
+    z-index: 5;
 }
 
 
