@@ -153,6 +153,81 @@ body {
  и обновить классы html'а */
 
 
+ /*Стили для блока header */
+
+
+
+.shadow_header{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    height:78px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+   
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* внутренние стили для блока header */
+
+.logo_image{
+    margin-top:25px;
+    margin-left: 180px;
+}
+
+
+.menu {
+    margin-top:10px;
+    margin-left: 950px;
+    margin-right: 70px;
+}
+
+ul#menu li {
+    padding: 15px;
+    display:inline;
+}
+
+.anchor { 
+    text-decoration: none; 
+    color: black;
+}
+
+.btn-call {
+    color:#B57AD2;
+    width: 160px;
+    height: 46px;
+    margin-top:12px;
+    border-radius: 35px;
+    border-color:#B57AD2;
+    background-color: Transparent;
+}
+
+
+.left_header{
+    margin-top: 80px;
+}
+
+.header_button{
+   margin-left: 180px;
+   margin-top:100px;
+   position: relative;
+}
+
+.header_text{
+  margin-left: 180px;
+  margin-top: 200px;
+}
+
+.header_image {
+    margin-left: 236px;
+}
+
+
+
  
 .services {
     max-width: 1320px;
@@ -288,6 +363,19 @@ h2 {
     min-height: 300px;
     background: linear-gradient(to top,rgb(181,122,210,0.6), rgb(255,244,229,0.01));
 }
+.zigzag{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.zigzag img{
+    position: unset;
+}
+
+.cover{
+    object-fit: cover;
+  }
+
 
 @media (max-width: 400px) {
     .process_block, .secretsauce, .services, .expert, .footer {
