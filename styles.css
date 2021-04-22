@@ -226,12 +226,21 @@ ul#menu li {
 
 .btn-call {
     color:#B57AD2;
+    outline: none;
     width: 160px;
     height: 46px;
     margin-top:12px;
     border-radius: 35px;
     border-color:#B57AD2;
     background-color: Transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #B57AD2;
+  border-color:#ffffff;
+  color:#ffffff;
 }
 
 
