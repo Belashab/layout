@@ -224,6 +224,11 @@ ul#menu li {
     color: black;
 }
 
+.anchor:hover {
+    opacity: 1 #B57AD2;
+    color: #B57AD2
+  }
+
 .btn-call {
     color:#B57AD2;
     outline: none;
@@ -738,7 +743,7 @@ h2 {
 .oval_image {
     flex-wrap: wrap;
     width: 100%;
-    position:relative;
+    position: relative;
 }
 
 .team_header {
@@ -759,6 +764,7 @@ h2 {
 }
 
 .member_image {
+    max-width:118.5rem;
     width: 100%;
     height: 100%;
     position: absolute;
