@@ -564,13 +564,7 @@ h2 {
 }
 
 .stories_arrows {
-    /* position: relative; */
     z-index: 1;
-    width: 100%;
-    height: auto;
-    /* padding: 20px; */
-    /* max-width: 600px;
-    max-height: 715px; */
 }
 
 .stories_long_arrow {
