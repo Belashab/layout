@@ -318,7 +318,7 @@ html,body{
 }
 
 /* START SERGEY CSS = PROGRESS BLOCK*/
-.process, .secretsauce, .founder, .expert, .footer {
+.process, .secretsauce, .founder, .expert, .footer, .stories {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -538,23 +538,7 @@ h2 {
     /* flex-shrink: 1; */
 }
 
-.stories {
-    display: flex;
-    flex-direction: row;
-    /* max-width: 1320px; */
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    /* margin-bottom: 12%; */
-    flex-wrap: wrap;
-    padding: 20px;
-    flex: 35%;
-    /* margin: 20px; */
-}
 
-.stories_header {
-    text-align: center;
-}
 
 .stories_block {
     padding: 20px;
