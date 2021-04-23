@@ -178,41 +178,98 @@ body {
  и обновить классы html'а */
 
 
- /*Стили для блока header */
+ /*Стили mobile friendly для блока header */
 
 
-/* .header {
-   
-} */
+.header{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.header_block{
+    flex:50%
+}
+
+.header_block img{
+    float: right;
+    max-width: 100%;
+}
 
 .shadow_header{
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    height:78px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-   
 }
 
 .header_container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
+
+
+.logo_image{
+    align-self: center;
+ }
+
+ .header_button{
+    margin-top:70px;
+ }
+ .header_text{
+    margin-top: 140px;
+  }
+
+ /*Стили mobile friendly для блока header */
+@media (min-width: 1800px) {
+    .header{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    .header_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shadow_header{
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 70px;
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    }
+    
+    .header_button{
+        margin-left: 180px;
+        margin-top:100px;
+     }
+     .header_text{
+        margin-left: 180px;
+        margin-top: 240px;
+      }
+      
+      
+    .menu {
+       margin-top:8px;
+       margin-left: 950px;
+       margin-right: 70px;
+      }
+    .logo_image{
+       margin-top:18px;
+       margin-left: 180px;
+    }
+    
+      
+  }
 
 
 /* внутренние стили для блока header */
-
-.logo_image{
-    margin-top:25px;
-    margin-left: 180px;
-}
-
-
-.menu {
-    margin-top:10px;
-    margin-left: 950px;
-    margin-right: 70px;
-}
 
 ul#menu li {
     padding: 15px;
@@ -230,11 +287,11 @@ ul#menu li {
   }
 
 .btn-call {
+    margin-top:8px;
     color:#B57AD2;
     outline: none;
     width: 160px;
     height: 46px;
-    margin-top:12px;
     border-radius: 35px;
     border-color:#B57AD2;
     background-color: Transparent;
@@ -253,21 +310,6 @@ button:hover {
     margin-top: 80px;
 }
 
-.header_button{
-   margin-left: 180px;
-   margin-top:100px;
-   position: relative;
-}
-
-.header_text{
-  font-style: Normal;
-  margin-left: 180px;
-  margin-top: 200px;
-}
-
-.header_image {
-    margin-left: 236px;
-}
 
 
 
@@ -415,7 +457,7 @@ h2 {
 
 
 @media (max-width: 400px) {
-    .process_block, .secretsauce, .services, .expert, .footer {
+    .header_block, .process_block, .secretsauce, .services, .expert, .footer {
       flex: 100%;
     }
   }
@@ -863,5 +905,4 @@ h2 {
     position: absolute;
     font-size: 13px;
 }
-
 
