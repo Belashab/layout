@@ -322,21 +322,8 @@ button:hover {
     display: flex;
     align-content: center;
     justify-content: center;
-
-    /* Подключаю CSS шрифт */
-    @font-face {
-        font-family: 'helveticaneuecyr';
-        src: url("/fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
-        font-weight: normal;
-        font-style: normal;    
-    }
-
 }
 
-html,body{
-    font-family: "helveticaneuecyr",Helvetica;
-    font-weight: 300;
-    }
 
 .white{
     color: white;
