@@ -558,12 +558,13 @@ h2 {
 
 .stories_block {
     padding: 20px;
-    max-width: 650px;
-    flex:50%;
-    /* margin:20px; */
+    /* max-width: 650px; */
+    flex:35%;
+    margin:20px;
 }
 
 .stories_image_section {
+    display: flex;
     position: relative;
     /* display: inline-flex; */
     padding: 20px;
@@ -573,7 +574,9 @@ h2 {
 }
 
 .stories_arrows {
+    /* display: flex; */
     z-index: 1;
+    /* flex: 50%; */
 }
 
 .stories_long_arrow {
@@ -588,7 +591,8 @@ h2 {
 }
 
 .stories_medium_arrow {
-    /* display: flex; */
+    display: flex;
+    flex: 50%;
     /* justify-content: center; */
     text-align: center;
     position: absolute;
@@ -609,6 +613,12 @@ h2 {
     top: 500px;
     right: 490px;
 }
+
+@media (max-width: 800px) {
+    .stories_block {
+      flex: 100%;
+    }
+  }
 
 .success_list {
     list-style: none;
