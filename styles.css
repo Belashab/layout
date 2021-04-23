@@ -548,7 +548,7 @@ h2 {
     /* margin-bottom: 12%; */
     flex-wrap: wrap;
     padding: 20px;
-    flex: 50%;
+    flex: 35%;
     /* margin: 20px; */
 }
 
@@ -558,10 +558,10 @@ h2 {
 
 .stories_block {
     padding: 20px;
-    /* max-width: 650px; */
+    max-width: 650px;
     flex:35%;
     margin:20px;
-    flex: 50%;
+    flex-shrink: 2;
 }
 
 .stories_image_section {
@@ -571,12 +571,16 @@ h2 {
     padding: 20px;
     max-width: 650px;
     max-height: 711px;
-    flex: 50%;
+    width: 100%;
+    height: auto;
+    flex: 35%;
+    flex-shrink: 2;
 }
 
 .stories_arrows {
     /* display: flex; */
     z-index: 1;
+    height: auto;
     /* flex: 50%; */
 }
 
@@ -616,8 +620,8 @@ h2 {
 }
 
 @media (max-width: 800px) {
-    .stories_block {
-      flex: 100%;
+    .stories_image_section {
+      display: none;
     }
   }
 
