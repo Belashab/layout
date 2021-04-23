@@ -766,8 +766,8 @@ h2 {
     vertical-align: middle;
 }
 
-/* Стили для блока ourteam */
-@media (min-width: 800px) {
+/* Стили для блока team */
+@media (min-width: 1300px) {
 .team {
     /* background: linear-gradient(to bottom, #F9F4FC, #cac4ba);
 	border-radius: 50%;
@@ -909,12 +909,25 @@ h2 {
         position: absolute;
         font-size: 13px;
     }
-    
+
+    .member_namer_right {
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        top: 150px;
+ }
+ 
+   .member_namer_left {
+        position: absolute;
+        z-index: 3;
+        left: 25px;
+        top: 150px;
+ }
     
     
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1300px) {
     .team { 
         display: none;
     }
@@ -933,13 +946,14 @@ h2 {
     .team_header {
        /* align-self: auto; */
        padding: 10px;
+       text-align: center;
     }
 
     .member_team {
         /* width: 100%;
         height: auto; */
         align-content: center;
-        /* margin-bottom: 20px; */
+        margin-bottom: 20px;
     }
 
     .member_image {
@@ -966,10 +980,41 @@ h2 {
         font-size: 13px;
         /* max-width: 35px; */
         z-index: 2;
+        left:20px;
     }
 
     
+    .member5_text {
+        top:0px;
+        left:80px;
+        position: absolute;
+        font-size: 13px;
+    }
+
+  .member2_image {
+        padding-right: 5px;
+        position: relative;
+    }
+
+    .member_namer_right {
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        top: 130px;
+      
+ }
+ 
+ .member_namer_left {
+        position: absolute;
+        z-index: 3;
+        left: 25px;
+        top: 125px;
+ }
+ 
     
   
   } 
+
+  
+
 
