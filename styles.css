@@ -561,6 +561,7 @@ h2 {
     /* max-width: 650px; */
     flex:35%;
     margin:20px;
+    flex: 50%;
 }
 
 .stories_image_section {
