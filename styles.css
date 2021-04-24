@@ -10,14 +10,15 @@
 
 body {
     cursor: url(images/pointer.png), auto;
+    /* overflow-x: hidden; */
 }
 
 /* Далее содеоажатся ВСЕ необходимые шрифты от большего размера к меньшему*/
 
-@font-face {
+/* @font-face {
     font-family: landing-page;
     src:url(fonts/HelveticaNeueCyr-Roman.woff2)
-}
+} */
 
 @font-face {
     font-family: landing-page;
@@ -161,8 +162,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    padding:10px;
 }
 
 .headlight {
@@ -179,38 +178,98 @@ body {
  и обновить классы html'а */
 
 
- /*Стили для блока header */
+ /*Стили mobile friendly для блока header */
 
 
+.header{
+    display: flex;
+    flex-wrap: wrap;
+ }
+.header_block{
+    flex:50%
+}
+
+.header_block img{
+    float: right;
+    max-width: 100%;
+}
 
 .shadow_header{
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    height:78px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-   
 }
 
 .header_container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
+
+
+.logo_image{
+    align-self: center;
+ }
+
+ .header_button{
+    margin-top:70px;
+ }
+ .header_text{
+    margin-top: 140px;
+  }
+
+ /*Стили mobile friendly для блока header */
+@media (min-width: 1800px) {
+    .header{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+    .header_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shadow_header{
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 70px;
+        box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    }
+    
+    .header_button{
+        margin-left: 180px;
+        margin-top:100px;
+     }
+     .header_text{
+        margin-left: 180px;
+        margin-top: 240px;
+      }
+      
+      
+    .menu {
+       margin-top:8px;
+       margin-left: 950px;
+       margin-right: 70px;
+      }
+    .logo_image{
+       margin-top:18px;
+       margin-left: 180px;
+    }
+    
+      
+  }
 
 
 /* внутренние стили для блока header */
-
-.logo_image{
-    margin-top:25px;
-    margin-left: 180px;
-}
-
-
-.menu {
-    margin-top:10px;
-    margin-left: 950px;
-    margin-right: 70px;
-}
 
 ul#menu li {
     padding: 15px;
@@ -222,14 +281,28 @@ ul#menu li {
     color: black;
 }
 
+.anchor:hover {
+    opacity: 1 #B57AD2;
+    color: #B57AD2
+  }
+
 .btn-call {
+    margin-top:8px;
     color:#B57AD2;
+    outline: none;
     width: 160px;
     height: 46px;
-    margin-top:12px;
     border-radius: 35px;
     border-color:#B57AD2;
     background-color: Transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #B57AD2;
+  border-color:#ffffff;
+  color:#ffffff;
 }
 
 
@@ -237,20 +310,6 @@ ul#menu li {
     margin-top: 80px;
 }
 
-.header_button{
-   margin-left: 180px;
-   margin-top:100px;
-   position: relative;
-}
-
-.header_text{
-  margin-left: 180px;
-  margin-top: 200px;
-}
-
-.header_image {
-    margin-left: 236px;
-}
 
 
 
@@ -263,21 +322,8 @@ ul#menu li {
     display: flex;
     align-content: center;
     justify-content: center;
-
-    /* Подключаю CSS шрифт */
-    @font-face {
-        font-family: 'helveticaneuecyr';
-        src: url("/fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
-        font-weight: normal;
-        font-style: normal;    
-    }
-
 }
 
-html,body{
-    font-family: "helveticaneuecyr",Helvetica;
-    font-weight: 300;
-    }
 
 .white{
     color: white;
@@ -398,7 +444,7 @@ h2 {
 
 
 @media (max-width: 400px) {
-    .process_block, .secretsauce, .services, .expert, .footer {
+    .header_block, .process_block, .secretsauce, .services, .expert, .footer {
       flex: 100%;
     }
   }
@@ -548,40 +594,31 @@ h2 {
     /* margin-bottom: 12%; */
     flex-wrap: wrap;
     padding: 20px;
-    flex: 35%;
     /* margin: 20px; */
-}
-
-.stories_header {
-    text-align: center;
 }
 
 .stories_block {
     padding: 20px;
     max-width: 650px;
-    flex:35%;
     margin:20px;
-    flex-shrink: 2;
 }
 
 .stories_image_section {
-    display: flex;
     position: relative;
     /* display: inline-flex; */
     padding: 20px;
     max-width: 650px;
     max-height: 711px;
-    width: 100%;
-    height: auto;
-    flex: 35%;
-    flex-shrink: 2;
 }
 
 .stories_arrows {
-    /* display: flex; */
+    /* position: relative; */
     z-index: 1;
+    width: 100%;
     height: auto;
-    /* flex: 50%; */
+    /* padding: 20px; */
+    /* max-width: 600px;
+    max-height: 715px; */
 }
 
 .stories_long_arrow {
@@ -596,8 +633,7 @@ h2 {
 }
 
 .stories_medium_arrow {
-    display: flex;
-    flex: 50%;
+    /* display: flex; */
     /* justify-content: center; */
     text-align: center;
     position: absolute;
@@ -618,12 +654,6 @@ h2 {
     top: 500px;
     right: 490px;
 }
-
-@media (max-width: 800px) {
-    .stories_image_section {
-      display: none;
-    }
-  }
 
 .success_list {
     list-style: none;
@@ -722,5 +752,256 @@ h2 {
     font-size: 32px; 
     vertical-align: middle;
 }
+
+/* Стили для блока team */
+@media (min-width: 1300px) {
+.team {
+    /* background: linear-gradient(to bottom, #F9F4FC, #cac4ba);
+	border-radius: 50%;
+    transform: scaleX(1.5);
+    transform: scaleY(0.9);   вариант овала как фон дива*/ 
+      flex-wrap: wrap;
+      display: flex;
+      height: 700px;
+      width: 118.5rem;
+      max-width: 2000px;
+      justify-content: center;
+      padding-bottom: 400px;
+    }
+
+    .team_mobile {
+        display: none;
+    }
+
+      .oval_image {
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+    }
+    
+    .team_header {
+        padding-top: 10px;
+        /* transform: initial;  для варианта с овалом как фон*/
+        text-align: center;
+        position: absolute;
+    }
+    
+    
+    .member_team {
+        /* transform: initial;  для варианта с овалом как фон*/
+        width: 100%;
+        height: auto;
+        align-self: center;
+        text-align: center;
+        position: absolute;
+    }
+    
+    .member_image {
+        max-width:118.5rem;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .member1 {
+        position: absolute;
+        z-index: 1;
+        top:550px;
+        left: 350px;
+    }
+    
+    .member2{
+        position: absolute;
+        z-index: 2;
+        top:650px;
+        right: 720px; 
+    }
+    
+    .member3 {
+        position: absolute;
+        z-index: 3;
+        top: 170px;
+        right: 350px;
+    }
+    
+    .member4 {
+        position: absolute;
+        z-index: 4;
+        top: 550px;
+        right: 250px;
+    }
+    
+    .member5{
+        position: absolute;
+        z-index: 5;
+        top: 170px;
+        left: 350px;
+    }
+    
+    .member1_image {
+        position: relative;
+    }
+    
+    .member2_image {
+        position: relative;
+    }
+    
+    .member3_image {
+        position: relative;
+    }
+    
+    .member4_image {
+        position: relative;
+    }
+    
+    .member5_image {
+        position: relative;
+    }
+    
+    
+    .member1_text {
+        top:0px;
+        position: absolute;
+        font-size: 13px;
+        left:30px;
+    }
+    
+    
+    .member2_text {
+        top:5px;
+        position: absolute;
+        left:60px;
+        font-size: 13px;
+    }
+    
+    
+    .member3_text {
+        top:0px;
+        position: absolute;
+        left:50px;
+        font-size: 13px;
+    }
+    
+    
+    .member4_text {
+        top:0px;
+        position: absolute;
+        left:30px;
+        font-size: 13px;
+    }
+    
+    .member5_text {
+        top:0px;
+        left:85px;
+        position: absolute;
+        font-size: 13px;
+    }
+
+    .member_namer_right {
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        top: 150px;
+ }
+ 
+   .member_namer_left {
+        position: absolute;
+        z-index: 3;
+        left: 25px;
+        top: 150px;
+ }
+    
+    
+}
+
+@media (max-width: 1300px) {
+    .team { 
+        display: none;
+    }
+
+    .team_mobile {
+        background: linear-gradient(to bottom, #F9F4FC, #cac4ba);
+        flex-wrap: wrap;
+        display: flex;
+        align-content: space-between;
+        align-items: center;
+        /* max-width: 400px; */
+        flex-direction: column;
+        /* align-items:baseline; */
+    }
+
+    .team_header {
+       /* align-self: auto; */
+       padding: 10px;
+       text-align: center;
+    }
+
+    .member_team {
+        /* width: 100%;
+        height: auto; */
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .member_image {
+        flex: 50%;
+        flex-direction: column;
+        flex:100%;
+        /* width: 100%; */
+        /* height: 100%; */
+        margin-bottom: 20px;
+        flex-shrink: 0;
+    }
+
+    .member {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        z-index: 1;
+    }
+
+
+    .member_text {
+        position: absolute;
+        align-self: flex-start;
+        font-size: 13px;
+        /* max-width: 35px; */
+        z-index: 2;
+        left:20px;
+    }
+
+    
+    .member5_text {
+        top:0px;
+        left:80px;
+        position: absolute;
+        font-size: 13px;
+    }
+
+  .member2_image {
+        padding-right: 5px;
+        position: relative;
+    }
+
+    .member_namer_right {
+        position: absolute;
+        z-index: 3;
+        right: 30px;
+        top: 130px;
+      
+ }
+ 
+ .member_namer_left {
+        position: absolute;
+        z-index: 3;
+        left: 25px;
+        top: 125px;
+ }
+ 
+    
+  
+  } 
+
+  
 
 
