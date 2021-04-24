@@ -10,15 +10,15 @@
 
 body {
     cursor: url(images/pointer.png), auto;
-    /* overflow-x: hidden; */
+    color:rgb(47, 47, 47);
 }
 
 /* Далее содеоажатся ВСЕ необходимые шрифты от большего размера к меньшему*/
 
-/* @font-face {
+@font-face {
     font-family: landing-page;
     src:url(fonts/HelveticaNeueCyr-Roman.woff2)
-} */
+}
 
 @font-face {
     font-family: landing-page;
@@ -38,117 +38,7 @@ body {
     font-weight:normal
 }
 
-/* 
-.font_bold_40 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 40px;
-}
 
-.font_bold_36 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 36px;
-}
-
-.font_bold_32 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 32px;
-}
-
-.font_bold_30 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 30px;
-}
-
-.font_bold_24 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 24px;
-}
-
-.font_bold_20 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 20px;
-}
-
-.font_bold_18 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 18px;
-}
-
-.font_bold_16 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Bold.woff2';
-    font-size: 16px;
-}
-
-.font_regular_20 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Roman.woff2';
-    font-size: 20px;
-}
-
-.font_regular_22 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Roman.woff2';
-    font-size: 22px;
-}
-
-.font_regular_16 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Roman.woff2';
-    font-size: 22px;
-}
-
-.font_medium_56 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 56px;
-}
-
-.font_medium_24 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 24px;
-}
-
-.font_medium_18 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 18px;
-}
-
-.font_medium_16 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 16px;
-}
-
-.font_medium_14 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 14px;
-}
-
-.font_medium_12 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Medium.woff2';
-    font-size: 12px;
-}
-
-.font_regular_16 {
-    font-family: 'Arial, Helvetica, sans-serif';
-    src: 'fonts/HelveticaNeueCyr-Roman.woff2';
-    font-size: 16px;
-} */
-
-
-/* конец перечисления шрифтов */
 
 
 .image_scale {
@@ -186,7 +76,8 @@ body {
     flex-wrap: wrap;
  }
 .header_block{
-    flex:50%
+    flex:50%;
+    width: 100%;
 }
 
 .header_block img{
@@ -195,13 +86,13 @@ body {
 }
 
 .shadow_header{
-    justify-content:center;
+    justify-content: center;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-    text-align: center;
 }
 
 .header_container {
@@ -209,10 +100,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-
-
-
  .header_button{
     margin-top:70px;
  }
@@ -276,7 +163,7 @@ body {
       background-color: Transparent;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-}
+    }
     
       
   }
@@ -325,9 +212,8 @@ button:hover {
 }
 
 
+
 .services {
-
-
     flex-wrap: wrap;
     padding: 10px;
     display: flex;
@@ -567,9 +453,6 @@ h2 {
     margin-bottom: 15px;
 }
     
-/* далее пишем все прочие стили при этом названия должны быть в виде 
-(название секции маленькими буквами)_(название стиля).
-Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
 
 /* Стили для блока achievements */
@@ -581,7 +464,6 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-shrink: 1; */
 }
 
 .customers {
@@ -592,20 +474,16 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-shrink: 1; */
 }
 
 .stories {
     display: flex;
     flex-direction: row;
-    /* max-width: 1320px; */
     align-items: center;
     align-content: center;
     justify-content: center;
-    /* margin-bottom: 12%; */
     flex-wrap: wrap;
     padding: 20px;
-    /* margin: 20px; */
 }
 
 .stories_block {
@@ -623,7 +501,6 @@ h2 {
 }
 
 .stories_arrows {
-    /* position: relative; */
     z-index: 1;
     width: 100%;
     height: auto;
@@ -670,6 +547,14 @@ h2 {
     list-style: none;
     max-width: 505px;
 }
+
+
+@media (max-width: 800px) { 
+.stories_image_section{
+         display: none !important; 
+    }       
+}
+
   
 
 
@@ -936,20 +821,15 @@ h2 {
         display: flex;
         align-content: space-between;
         align-items: center;
-        /* max-width: 400px; */
         flex-direction: column;
-        /* align-items:baseline; */
     }
 
     .team_header {
-       /* align-self: auto; */
        padding: 10px;
        text-align: center;
     }
 
     .member_team {
-        /* width: 100%;
-        height: auto; */
         align-content: center;
         margin-bottom: 20px;
     }
@@ -958,8 +838,6 @@ h2 {
         flex: 50%;
         flex-direction: column;
         flex:100%;
-        /* width: 100%; */
-        /* height: 100%; */
         margin-bottom: 20px;
         flex-shrink: 0;
     }
@@ -976,7 +854,6 @@ h2 {
         position: absolute;
         align-self: flex-start;
         font-size: 13px;
-        /* max-width: 35px; */
         z-index: 2;
         left:20px;
     }
