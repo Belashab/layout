@@ -195,11 +195,13 @@ body {
 }
 
 .shadow_header{
+    justify-content:center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    text-align: center;
 }
 
 .header_container {
@@ -210,9 +212,6 @@ body {
 
 
 
-.logo_image{
-    align-self: center;
- }
 
  .header_button{
     margin-top:70px;
@@ -221,7 +220,7 @@ body {
     margin-top: 140px;
   }
 
- /*Стили mobile friendly для блока header */
+ /*Стили  для блока header */
 @media (min-width: 1800px) {
     .header{
         max-width: 100%;
@@ -262,8 +261,22 @@ body {
       }
     .logo_image{
        margin-top:18px;
-       margin-left: 180px;
+       margin-left: 125px;
     }
+    
+       
+    .btn-call {
+      margin-top:8px;
+      color:#B57AD2;
+      outline: none;
+      width: 160px;
+      height: 46px;
+      border-radius: 35px;
+      border-color:#B57AD2;
+      background-color: Transparent;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+}
     
       
   }
@@ -287,6 +300,7 @@ ul#menu li {
   }
 
 .btn-call {
+    margin-bottom:8px;
     margin-top:8px;
     color:#B57AD2;
     outline: none;
@@ -311,9 +325,6 @@ button:hover {
 }
 
 
-
-
- 
 .services {
 
 
