@@ -40,6 +40,7 @@ body {
 
 
 
+
 .image_scale {
     max-width: 100%;
     max-height: auto;
@@ -445,9 +446,6 @@ h2 {
     margin-bottom: 15px;
 }
     
-/* далее пишем все прочие стили при этом названия должны быть в виде 
-(название секции маленькими буквами)_(название стиля).
-Стили, входящие в одну секцию желательо группировать рядом друг с другом*/
 
 
 /* Стили для блока achievements */
@@ -549,6 +547,12 @@ h2 {
     max-width: 505px;
 }
 
+
+@media (max-width: 800px) { 
+.stories_image_section{
+         display: none !important; 
+    }       
+}
 
   
 
