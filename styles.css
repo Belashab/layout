@@ -548,7 +548,7 @@ h2 {
 }
 
 @media (max-width: 800px) { 
-.stories_arrows{
+.stories_image_section{
          display: none !important; 
     }       
 }
