@@ -15,10 +15,10 @@ body {
 
 /* Далее содеоажатся ВСЕ необходимые шрифты от большего размера к меньшему*/
 
-/* @font-face {
+@font-face {
     font-family: landing-page;
     src:url(fonts/HelveticaNeueCyr-Roman.woff2)
-} */
+}
 
 @font-face {
     font-family: landing-page;
@@ -38,7 +38,7 @@ body {
     font-weight:normal
 }
 
-/* конец перечисления шрифтов */
+
 
 
 .image_scale {
@@ -547,11 +547,13 @@ h2 {
     max-width: 505px;
 }
 
+
 @media (max-width: 800px) { 
 .stories_image_section{
          display: none !important; 
     }       
 }
+
   
 
 
